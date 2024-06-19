@@ -1,0 +1,610 @@
+@font-face{
+    font-family: "Louis-George";
+    src:url('fuentes/louis_george_cafe/Louis\ George\ Cafe.ttf'),
+    url('fuentes/louis_george_cafe/Louis\ George\ Cafe\ Bold.ttf'),
+    url('fuentes/louis_george_cafe/Louis\ George\ Cafe\ Bold\ Italic.ttf'),
+    url('fuentes/louis_george_cafe/Louis\ George\ Cafe\ Light.ttf'),
+    url('fuentes/louis_george_cafe/Louis\ George\ Cafe\ Light\ Italic.ttf'),
+    url('fuentes/louis_george_cafe/Louis\ George\ Cafe\ Italic.ttf');
+    font-weight: normal;
+}
+
+body {
+    font-family: Louis-George, Arial, sans-serif;
+    margin: 0;
+    background-image: url("../imagenes/back-cafeteria.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    padding: 0px 20px;
+    opacity: 0.8;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #555;
+}
+
+#principal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-index{
+    width: 80%;
+    background-color: white;
+}
+
+
+.historia{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(201, 160, 99, 1);
+    margin: 20px;
+    border: 2px solid rgb(113, 65, 5);
+    border-radius: 20px;
+}
+
+.texto-historia{
+    padding: 0px 20px;
+    opacity: 0.95;
+    color: rgb(0, 0, 0);
+}
+
+.texto-historia h2{
+    text-align: center;
+}
+
+.texto-historia p{
+    font-style: italic;
+    font-size: 18px;
+}
+
+span{
+    font-weight: bold;
+}
+
+#fachada{
+    width: 30%;
+    margin: 15px;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.sugerencias{
+    background-color: rgb(113, 65, 5);
+    margin: 20px;
+    padding: 10px 0px;
+    border: 3px solid rgb(201, 160, 99);
+    border-radius: 20px;
+}
+
+.texto-sugerencia{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+}
+
+.texto-sugerencia p{
+    font-style: italic;
+    font-size: 18px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+    height: 100%;
+}
+
+.opcion {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.opcion a img {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(201, 160, 99, 1);
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.opcion p {
+    margin: 0;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+}
+
+.instalaciones{
+    background-color: rgba(201, 160, 99, 1);
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgb(113, 65, 5);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.instalaciones-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    width: 40%;
+}
+
+.instalaciones-text h2{
+    text-align: center;
+}
+
+.instalaciones-text p{
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.instalaciones-link{
+    width: 30%;
+    padding: 10px;
+}
+
+.instalaciones-img{
+    width:100%;
+    border-radius: 10px;
+}
+
+.nuestro-cafe{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(201, 160, 99);
+    margin: 15px 20px 0px 20px;
+    border: 2px solid rgb(113, 65, 5);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cafe-texto{
+    width: 30%;
+}
+
+.cafe-texto h2{
+    text-align: center;
+}
+
+.cafe-texto p{
+    text-align: center;
+    padding: 0px 10px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.nuestro-cafe video{
+    width: 40%;
+}
+
+aside{
+    width: 20%;
+    background-color: rgba(230, 161, 60, 0.9);
+    margin: 0px;
+}
+
+aside section{
+    padding: 5px 10px;
+}
+
+#cafetip{
+    display: flex;
+    flex-direction: column;
+}
+
+aside section h3{
+    text-align: center;
+}
+
+audio {
+    width: auto;
+}
+
+
+.proximamente ul{
+    list-style-type: none;
+    text-align: left;
+    margin: 0px 10px;
+    padding: 0px 10px;
+}
+
+.proximamente ul li{
+    padding: 5px 5px;
+}
+
+#show{
+    list-style-type: '🎵';
+}
+
+#taller{
+    list-style-type: '☕';
+}
+
+.redes-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes-links a img{
+    width: 30px;
+}
+
+.ubicacion{
+    width: auto;
+}
+
+.suscribir form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suscribir form button{
+    margin: 5px;
+}
+
+iframe {
+    width: 100%;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+    background: none;
+    width: 100%;
+}
+
+.main-menu h1{
+    background-color: rgb(201, 160, 99);
+    opacity: 0.9;
+    padding: 10px 0px;
+    width: 80%;
+    text-align: center;
+    border: 2px solid rgb(113, 65, 5);
+}
+
+.main-table {
+    width: 100%;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgb(201, 160, 99);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    opacity: 0.95;
+}
+
+th {
+    background-color: #f3f3f3;
+    color: #333;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-style: italic;
+    font-weight: bold;
+    color: #000000;
+}
+
+th, td {
+    border: 2px solid rgb(113, 65, 5);
+}
+
+.span-menu{
+    font-style: italic;
+    font-weight: normal;
+}
+
+.menu-highlights {
+    text-align: center;
+    background-color: rgb(201, 160, 99);
+    width: 80%;
+    margin: 20px 0px;
+    opacity: 0.95;
+    border: 2px solid rgb(113, 65, 5);
+    border-radius: 20px;
+}
+
+.menu-highlights h2 {
+    font-size: 24px;
+}
+
+.highlight-items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.highlight-items article {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.highlight-items article p{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.highlight-items article h4{
+    font-size: 18px;
+}
+
+.highlight-items img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.menu-list{
+    width: 80%;
+    background-color: rgb(201, 160, 99);
+    opacity: 0.95;
+    border: 2px solid rgb(113, 65, 5);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.aclamados{
+    display: flex;
+    justify-content: space-around;
+}
+
+.aclamados div ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.aclamados div ol {
+    counter-reset: list-counter;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-list li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.lista-aclamados {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.aclamados ul li::before {
+    content: "•";
+    margin-right: 10px;
+    font-size: 40px;
+    color: #000;
+}
+
+.votados li::before{
+    counter-increment: list-counter;
+    content: counter(list-counter) ". ";
+    font-size: 18px;
+    color: #000;
+    margin-right: 10px;
+}
+
+.lista-aclamados img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.lista-aclamados p{
+    margin: 0;
+    font-size: 18px;
+}
+
+.menu-list h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.menu-list h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.main-form{
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgb(201, 160, 99);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 2px solid rgb(113, 65, 5);
+    border-radius: 10px;
+}
+
+
+.main-form h1, .main-form h2{
+    color: #030303;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.fila-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.grupo-form {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+datalist {
+    width: 100%;
+    padding: 8px 0px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    align-self: center;
+}
+
+#menu{
+    padding: 8px 0px;
+    margin-top: 5px;
+}
+
+fieldset{
+    border-color: rgb(113, 65, 5);
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background: rgb(113, 65, 5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    margin: 0px auto;
+    display: block;
+}
+
+#contact-form button:hover {
+    background: rgba(179, 116, 0, 0.74);
+}
+
+.contact-info, .social-media {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f3f3f3;
+    border-radius: 10px;
+}
+
+.social-media h2{
+    text-align: center;
+}
+
+.redes-links-contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.redes-links-contacto a img{
+    width: 30px;
+    margin: 0px 40px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    opacity: 0.8;
+}
+
+.contenido-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-titulo img{
+    width: 50px;
+}
+
+.contacto-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.contacto-footer p {
+    margin: 5px 0;
+    text-align: center;
+}

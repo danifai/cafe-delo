@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Deló</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="./imagenes/delo-logo.png" alt="Logo Deló" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-form">
+        <h1>Contacto</h1>
+        <form id="contact-form">
+            <div class="fila-form">
+                <div class="grupo-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="fila-form">
+                <div class="grupo-form">
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="grupo-form">
+                    <label for="date">Fecha de reserva:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+            </div>
+            <div class="fila-form">
+                <div class="grupo-form">
+                    <fieldset>
+                        <legend>Tipo de consulta:</legend>
+                        <label><input type="radio" name="query_type" value="reserva"> Reserva</label>
+                        <label><input type="radio" name="query_type" value="comentario"> Comentario</label>
+                        <label><input type="radio" name="query_type" value="reclamo"> Reclamo</label>
+                    </fieldset>
+                </div>
+                <div class="grupo-form">
+                    <fieldset>
+                        <legend>Preferencias:</legend>
+                        <label><input type="checkbox" name="preference" value="newsletter"> Suscribir al boletín</label>
+                        <label><input type="checkbox" name="preference" value="updates"> Recibir actualizaciones</label>
+                        <label><input type="checkbox" name="preference" value="promo"> Ofertas y promociones</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="fila-form">
+                <div class="grupo-form">
+                    <label for="menu">Menú de interés:</label>
+                    <input list="menus" name="menu" id="menu">
+                    <datalist id="menus">
+                        <option value="Cafetería">
+                        <option value="Tortas y Delicias">
+                        <option value="Platos principales">
+                    </datalist>
+                </div>
+                <div class="grupo-form">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <section class="contact-info">
+            <h2>Información de contacto</h2>
+            <p>Teniente Origone 151, Hurlingham, Buenos Aires</p>
+            <p>Teléfono: (11) 1234-5678</p>
+            <p>Horario de apertura: Lunes a Viernes de 8:00 a 20:00</p>
+        </section>
+
+        <section class="social-media">
+            <h2>No te olvides de seguirnos</h2>
+            <div class="redes-links-contacto">
+                <a href="https://www.instagram.com/" target="_blank"><img src="./imagenes/ig-logo.png" alt="Logo-Instagram"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./imagenes/face-logo.png" alt="Logo-Facebook"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="./imagenes/tiktok-logo.png" alt="Logo-Tiktok"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-titulo">
+            <a href="index.html">
+                <img src="./imagenes/logo-footer.png" alt="Logo Deló">
+            </a>
+            <h3>Cafetería Deló</h3>
+        </div>
+        <div class="contenido-footer">
+            <div class="contacto-footer">
+                <p>Desarrollado por: Daniel Faigenboim</p>
+            </div>
+            <p>© Copyright 2024 Deló - Todos los derechos reservados.</p>
+            <p>DNI 34506976 - Com. 4</p>
+        </div>
+    </footer>
+</body>
+</html>
